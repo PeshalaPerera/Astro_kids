@@ -1,0 +1,111 @@
+.neon{
+	font-size: 48px;
+	color: #fff;
+	text-shadow: 0 0 20px #2196f3;
+	animation: glow .5s infinite alternate;	
+}
+@keyframes glow {
+    to {
+        text-shadow: 0 0 15px #018EF5, 0 0 15px #00FFFF;
+    }
+}
+
+.map .home{
+	color: #ffff;
+	background: #1111;
+	display: flex;
+}
+
+.map .home:hover{
+	filter: drop-shadow(10px 10px 10px #7014cc);
+}
+
+.map .home:hover rect{
+	fill: white;
+	filter: drop-shadow(-10px -10px 30px #f72585);
+}
+
+.map .home:hover text{
+	fill: black;
+}
+
+.map .shop,
+.pictionary,
+.quiz,
+.siteMap,
+.contact,
+.about{
+	color: #ffff;
+	background: #1111;
+	display: flex;
+}
+
+.map .shop:hover,
+.pictionary:hover,
+.quiz:hover,
+.siteMap:hover,
+.contact:hover,
+.about:hover{
+	filter: drop-shadow(10px 10px 20px #4361ee);
+
+}
+
+.map .shop:hover rect,
+.pictionary:hover rect,
+.quiz:hover rect,
+.siteMap:hover rect,
+.contact:hover rect,
+.about:hover rect{
+	fill: white;
+	filter: drop-shadow(-10px -10px 30px #7014cc);
+}
+
+.map .shop:hover text,
+.pictionary:hover text,
+.quiz:hover text,
+.siteMap:hover text,
+.contact:hover text,
+.about:hover text{
+	fill: black;
+}
+
+.map .thumbNail,.gallery{
+	color: #ffff;
+	background: #1111;
+	display: flex;
+}
+
+.map .thumbNail:hover,
+.gallery:hover{
+	filter: drop-shadow(10px 10px 30px #3bf4fb);
+
+}
+
+.map .thumbNail:hover rect,
+.gallery:hover rect{
+	fill: white;
+	filter: drop-shadow(-10px -10px 20px #7014cc);
+}
+
+.map .thumbNail:hover text,
+.gallery:hover text{
+	fill: black;
+}
+
+rect{
+	opacity: 0.5;
+}
+
+line{
+	stroke: white;
+	stroke-width: 2px;
+	filter: drop-shadow(5px 0 12px #2196f3);
+}
+
+#footer {
+    width: 98.5%;
+}
+
+g{
+	cursor: pointer;
+}

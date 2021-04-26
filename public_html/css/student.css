@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, p{
+    color: white;
+    padding: 10px;
+}
+
+#pic {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.glows {
+    animation: glow .5s infinite alternate;
+}
+@keyframes glow {
+    to {
+        text-shadow: 0 0 15px #018EF5, 0 0 15px #00FFFF;
+    }
+}
+
+.centered {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#footer {
+    position: fixed;
+    width: 100%;
+}

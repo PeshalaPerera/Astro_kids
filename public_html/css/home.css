@@ -1,0 +1,90 @@
+.glows {
+    animation: glow .5s infinite alternate;
+}
+@keyframes glow {
+    to {
+        text-shadow: 0 0 15px #018EF5, 0 0 15px #00FFFF;
+    }
+}
+
+section {
+    padding: 0px 30px;
+    text-align: center;    
+}
+
+header > h1 {
+    font-size: 35px;
+    color: white;
+}
+
+header > h3 {
+    color: #2EF3D3;
+}
+
+#title_text {
+    color: white;
+    transform: translateY(-20px);
+
+}
+
+.article {
+    padding: 10px;
+    width: 520px;
+    height: 260px;
+     background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 20px 5px #2196f3;  
+  
+}
+
+.article p{
+    color: white;  
+}
+
+.flip-container {
+    display: inline-grid;
+}   
+
+.flip-container:hover .flipper {
+    transform: rotateY(180deg);
+    cursor: pointer;    
+}
+
+.flip-container,
+.front,
+.back {
+    height: 350px;
+    width: 600px;
+}
+
+.flipper {
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front {
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.image {
+    animation: zoom .8s infinite alternate;
+    transform-origin: center;
+    box-shadow: 0px 0px 20px 5px #2196f3;  
+}
+@keyframes zoom{
+    to { transform: scale(1.1); }
+}
+
+#footer {
+    width: 98.5%;
+}

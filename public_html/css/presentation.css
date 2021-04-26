@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, p{
+    color: white;
+    padding: 10px;
+}
+
+#pic {
+  animation: zoom 0.5s infinite alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes zoom{
+    to { transform: scale(1.1); }
+}
+
+.glows {
+    animation: glow .5s infinite alternate;
+}
+@keyframes glow {
+    to {
+        text-shadow: 0 0 15px #FF0000, 0 0 15px #F50057;
+    }
+}
+
+#footer {
+    position: fixed;
+    width: 100%;
+}
+
+#content {
+  text-align: center;
+}

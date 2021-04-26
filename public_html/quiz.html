@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Astro Kids</title>
+    <meta charset="UTF-8">
+    <!-- STYLES -->  
+    <link rel="stylesheet" href="css/quiz.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+    <!--TOP NAVIGATION BAR -->
+    <nav class="menu">
+        <div id="logo">
+            <img src="images/logo.png" alt="LOGO" height="48" width="300">
+        </div>
+        <ol class="main-menu">
+            <li class="menu-item"><a href="home.html">Home</a></li>
+            <li class="menu-item"><a href="products.html">Shop</a></li>
+            <li class="menu-item">
+                <a href="#">Pictionary</a>
+                <ol class="sub-menu">
+                    <li class="menu-item"><a href="thumbnails.html">Thumbnail</a></li>
+                    <li class="menu-item"><a href="more_pictures.html">More pictures for you</a></li>
+                </ol>
+            </li>
+            <li class="menu-item"><a href="quiz.html">Quiz</a></li>
+            <li class="menu-item"><a href="site_map.html">Site Map</a></li>
+            <li class="menu-item"><a href="contact_us.html">Contact Us</a></li>
+            <li class="menu-item"><a href="about_us.html">About Us</a></li>
+        </ol>
+    </nav>
+
+    <!--PAGE CONTENT -->
+    <div id="content">
+        <div class="start_btn"><button id="start_btn">Start The Quiz!</button></div>
+
+        <div class="info_box" id="info_box">
+            <div class="info-title">🚀 Rules of this Quiz</div>
+
+            <div class="info-list">
+                <div class="info">⭐ You will have only <span>60 seconds</span> per each question.</div>
+                <div class="info">⭐ Once you select your answer, it can't be undone.</div>
+                <div class="info">⭐ You can't select any option once time goes off.</div>
+                <div class="info">⭐ You can't exit from the Quiz while you're playing.</div>
+                <div class="info">⭐ You'll get points on the basis of your correct answers.</div>
+                <div class="info centerElement">The faster you answer, the higher your score</div>
+                <div class="info centerElement">When you are done, try again to beat your best score!</div>
+            </div>
+
+            <div class="buttons">
+                <button class="quit" id="quit">Exit Quiz</button>
+                <button class="restart" id="continue">Continue</button>
+            </div>
+        </div>
+
+        <div class="quiz_box" id="quiz_box">
+            <header>
+                <div class="title">Quiz</div>
+                <div class="timer">
+                    <div class="time_left_txt" id="time_left_txt">Time Left</div>
+                    <div class="timer_sec" id="timer_sec"></div>
+                </div>
+                <div class="time_line"></div>
+            </header>
+
+            <section id="section">
+                <div class="que_text">
+                    <h1>Question</h1>
+                </div>
+                <div class="option_list" id="option_list"></div>
+            </section>     
+
+
+            <footer id="quiz_footer">
+                <button class="next_btn" id="next_btn">Next Que</button>
+            </footer>
+        </div>
+
+
+        <div class="result_box" id="result_box">
+            <div class="complete_text">You've completed the Quiz!</div>
+            <div class="score_text"></div>
+            <div class="buttons">
+                <button class="restart" id="restart">Replay Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER -->
+    <footer id="footer">      
+        Page Editor:<a href="student_3.html"> Peshala Perera</a> <br>
+        Copyright &copy; All rights reserved.
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="js/questions.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html>

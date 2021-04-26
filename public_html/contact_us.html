@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Astro Kids</title>
+	<meta charset="UTF-8">
+	<!-- STYLES -->
+	<link rel="stylesheet" href="css/contact_us.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+    <!--TOP NAVIGATION BAR -->
+    <nav class="menu">
+        <div id="logo">
+            <img src="images/logo.png" alt="LOGO" height="48" width="300">
+        </div>
+        <ol class="main-menu">
+            <li class="menu-item"><a href="home.html">Home</a></li>
+            <li class="menu-item"><a href="products.html">Shop</a></li>
+            <li class="menu-item">
+                <a href="#">Pictionary</a>
+                <ol class="sub-menu">
+                    <li class="menu-item"><a href="thumbnails.html">Thumbnail</a></li>
+                    <li class="menu-item"><a href="more_pictures.html">More pictures for you</a></li>
+                </ol>
+            </li>
+            <li class="menu-item"><a href="quiz.html">Quiz</a></li>
+            <li class="menu-item"><a href="site_map.html">Site Map</a></li>
+            <li class="menu-item"><a href="contact_us.html">Contact Us</a></li>
+            <li class="menu-item"><a href="about_us.html">About Us</a></li>
+        </ol>
+    </nav>
+
+    <!--PAGE CONTENT-->
+    <div id="content">
+        <div class="container centerElement">
+			<div class="wrap-form" id="wrap-form">
+				<form class="query-form" id="form" name="form">
+					<span class="form-title">Ask Us Your Queries</span>
+					<div>
+						<div class="input-container">
+							<span class="input-label-1">Your Name</span>
+							<input class="form-input" type="text" name="name" id="name" placeholder="Enter your name">
+							<span class="input-focus"></span>
+						</div>
+
+						<div class="input-container">
+							<span class="input-label-1">Email</span>
+							<input class="form-input" type="text" id="email" name="email" placeholder="Enter your email addess">
+							<span class="input-focus"></span>
+						</div>
+					</div>
+
+					<div class="input-container">			
+						<div class="form-radio-container">
+							<span class="input-label-1">Your Query is about </span>
+							<span class="input-label-2">Delivery</span>
+							<input class="form-input-rad" type="radio" name="subject" value="delivery">
+							<span class="input-label-2">Warranty</span>
+							<input class="form-input-rad" type="radio" name="subject" value="warranty">
+							<span class="input-label-2">Services</span>
+							<input class="form-input-rad" type="radio" name="subject" value="services">
+							<span class="input-label-2">Others</span>
+							<input class="form-input-rad" type="radio" name="subject" value="others">
+						</div>
+					</div>
+					
+					<div class="input-container">
+						<span class="input-label-1">Query</span>
+						<textarea class="form-input" id="query" name="message" placeholder="Your query here..."></textarea>
+						<span class="input-focus"></span>
+					</div>
+
+					<div class="btn-container centerElement">
+						<button class="btn" type="button" onclick="viewQuery()" id="view">View query</button>
+						<button class="btn" type="reset" id="reset">Reset</button>
+					</div>
+				</form>
+			</div>
+		</div>     
+    </div>   	
+
+    <!--FOOTER -->
+    <footer id="footer">      
+        Page Editor:<a href="student_2.html"> Loganathan Bhavaneetharan</a> <br>
+        Copyright &copy; All rights reserved.
+    </footer>
+
+    <!--SCRIPT -->
+    <script src="js/contact_us.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.team-section {
+	overflow: hidden;
+	height: 500px;
+	text-align: center;
+	padding: 10px;
+}
+
+.team-section h1 {
+	text-transform: uppercase;
+	padding: 20px;
+	font-size: 60px;
+	color: white;
+	animation: glow .5s infinite alternate;
+}
+@keyframes glow {
+    to {
+        text-shadow: 0 0 15px #018EF5, 0 0 15px #00FFFF;
+    }
+}
+
+.border {
+	display: block;
+	margin: auto;
+	width: 160px;
+	height: 1px;
+	background: white;
+	margin-bottom: 20px;
+}
+
+.ps {
+	margin-bottom: 40px;
+}
+
+.imgs {
+	display: inline-block;
+	margin: 0 30px;
+	width: 260px;
+	height: 243px;
+	overflow: hidden;
+	border-radius: 50%;	
+}
+
+.ps img{
+	width: 100%;
+	transition: 0.4s all;
+	overflow: hidden;
+}
+
+.ps img:hover{
+	transform: scale(1.5);
+}
+
+#text{
+	color: white;
+	backdrop-filter: blur(10px);  
+}
+
+#footer {
+    position: fixed;
+    width: 100%;
+}

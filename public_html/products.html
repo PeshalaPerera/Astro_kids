@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Astro Kids</title>
+    <meta charset="UTF-8">
+    <!-- STYLES -->
+	<link rel="stylesheet" href="css/products.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+    <!--TOP NAVIGATION BAR -->
+    <nav class="menu">
+        <div id="logo">
+            <img src="images/logo.png" alt="LOGO" height="48" width="300">
+        </div>
+        <ol class="main-menu">
+            <li class="menu-item"><a href="home.html">Home</a></li>
+            <li class="menu-item"><a href="products.html">Shop</a></li>
+            <li class="menu-item">
+                <a href="#">Pictionary</a>
+                <ol class="sub-menu">
+                    <li class="menu-item"><a href="thumbnails.html">Thumbnail</a></li>
+                    <li class="menu-item"><a href="more_pictures.html">More pictures for you</a></li>
+                </ol>
+            </li>
+            <li class="menu-item"><a href="quiz.html">Quiz</a></li>
+            <li class="menu-item"><a href="site_map.html">Site Map</a></li>
+            <li class="menu-item"><a href="contact_us.html">Contact Us</a></li>
+            <li class="menu-item"><a href="about_us.html">About Us</a></li>
+        </ol>
+    </nav>
+
+    <!--PAGE CONTENT -->
+    <div id="content">
+        <p style="color: transparent;">-</p>
+        <div class="topic">
+            <h2>Astro KIDS Shop</h2>
+            <h3>Find awesome merchandise to make your space dream TRUE...</h3>
+        </div>
+        <div class="container">
+            <form>
+                <div class="details">
+                    <fieldset>
+                        <legend class="sub_topics">Personal Details</legend>
+                        <br>
+                        <label for="name">Full Name</label><br>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" class="text">
+                        <br><br>
+
+                        <label for="address"> Shipping Address</label><br>
+                        <textarea rows="4" name="address" id="address" placeholder="Enter shipping address here"></textarea>
+                        <br><br>
+
+                        <label for="email">Email Address</label><br>
+                        <input type="email" name="email" id="email" placeholder="Enter valid email" class="text">
+                        <br><br>
+
+                        <label for="cardno">Credit card number</label>
+                        <label for="cvv" id="cardnolbl">Security code</label><br>
+                        <input type="text" name="cardno" id="cardno" class="text" placeholder="Enter your card number">
+                        <input type="password" name="cvv" id="cvv" class="text" placeholder="***">
+                        <br><br>
+
+                    </fieldset>
+                    <br>
+                    <div class="order">
+                        <input type="submit" value="Clear order" class="end-button" id="reset">
+                        <input type="button" value="Place order" class="end-button" id="order" onclick="placeOrder();">
+                    </div>
+                    <br><br>
+                    <div id="result"></div>            
+                </div>
+
+
+                <div id="products">
+                    <fieldset class="row">
+                        <legend class="sub_topics">Posters</legend>
+                        <div class="items">
+                            <img class="image" src="images/Solar_System_Poster.jpg" alt="Solar System Poster">
+                            <div class="caption">
+                                <h4>Solar System Poster</h4>
+                                <div>
+                                    <p class="price">10$</p>
+                                    Quantity<input type="number" value="0" min="0" max="10" class="quantity" id="product1"><br>
+                                </div>
+                            </div>
+                            <button type="button" onclick="getProduct('1');">Add to Cart</button>
+                        </div>
+
+                        <div class="items">
+                            <img class="image" src="images/Astronout_Poster.png" alt="Astronout Poster">
+                            <div class="caption">
+                                <h4>Astronout Poster</h4>
+                                <div>
+                                    <p class="price">15$</p>
+                                    Quantity<input type="number" value="0" min="0" max="10" class="quantity" id="product2"><br>
+                                </div>
+                            </div>
+                            <button type="button" onclick="getProduct('2');">Add to Cart</button>
+                        </div>  
+       
+                        <div class="items">
+                            <img class="image" src="images/Astronomy_Poster.jpg" alt="Astronomy Poster">
+                            <div class="caption">
+                                <h4>Astronomy Poster</h4>
+                                <div>
+                                    <p class="price">20$</p>
+                                    Quantity<input type="number" value="0" min="0" max="10" class="quantity" id="product3"><br>
+                                </div>
+                            </div>
+                            <button type="button" onclick="getProduct('3');">Add to Cart</button>
+                        </div>
+                    </fieldset>
+
+                    
+                    <fieldset class="row">
+                        <legend class="sub_topics">Accessories</legend>
+                            <div class="items">
+                                <img class="image" src="images/Telescope.jpg" alt="Telescope">
+                                <div class="caption">
+                                    <h4 class="item">Alt-Az Refactor Telescope</h4>
+                                    <div>
+                                        <p class="price">355$</p>
+                                        Quantity <input type="number" value="0" min="0" max="10" class="quantity" id="product4"><br>
+                                    </div>
+                                </div>
+                                <button type="button" onclick="getProduct('4');">Add to Cart</button>
+                            </div>
+      
+                            <div class="items">
+                                <img class="image" src="images/Binocular.jpg" alt="Binocular">
+                                <div class="caption">
+                                    <h4>SkyMaster Pro Binocular</h4>
+                                    <div>
+                                        <p class="price"> 315$</p>
+                                        Quantity <input type="number" value="0" min="0" max="10" class="quantity" id="product5"><br>
+                                    </div>
+                                </div>
+                                <button type="button" onclick="getProduct('5');">Add to Cart</button>
+                            </div>
+            
+                            <div class="items">
+                                <img class="image" src="images/Sunglasses.jpg" alt="Sunglasses">
+                                <div class="caption">
+                                    <h4>Solar Eclipse Sunglasses</h4>
+                                    <div>
+                                        <p class="price">125$</p>
+                                        Quantity <input type="number" value="0" min="0" max="10" class="quantity" id="product6"><br>
+                                    </div>
+                                </div>
+                                <button type="button" onclick="getProduct('6');">Add to Cart</button>
+                            </div>                                
+                    </fieldset>
+
+                    
+                    <fieldset class="row">
+                        <legend class="sub_topics">Fashion</legend>
+                            <div class="items">
+                                <img class="image" src="images/tshirt.png" alt="T shirt">
+                                <div class="caption">
+                                    <h4 class="item">Medium Kids T shirt</h4>
+                                    <div>
+                                        <p class="price">25$</p>
+                                        Quantity <input type="number" value="0" min="0" max="10" class="quantity" id="product7"><br>
+                                    </div>
+                                </div>
+                                <button type="button" onclick="getProduct('7');">Add to Cart</button>
+                            </div>
+
+                            <div class="items">
+                                <img class="image" src="images/cap.png" alt="Cap">
+                                <div class="caption">
+                                    <h4>Kids Astronomy Cap</h4>
+                                    <div>
+                                        <p class="price"> 20$</p>
+                                        Quantity <input type="number" value="0" min="0" max="10" class="quantity" id="product8"><br>
+                                    </div>
+                                </div>
+                                <button type="button" onclick="getProduct('8');">Add to Cart</button>
+                            </div>
+       
+                            <div class="items">
+                                <img class="image" src="images/bangle.png" alt="Bangles">
+                                <div class="caption">
+                                    <h4>Solar System Bangles</h4>
+                                    <div>
+                                        <p class="price">10$</p>
+                                        Quantity <input type="number" value="0" min="0" max="10" class="quantity" id="product9"><br>
+                                    </div>
+                                </div>
+                                <button type="button" onclick="getProduct('9');">Add to Cart</button>
+                            </div>
+                    </fieldset>
+
+                </div> 
+            </form>
+        </div>
+    </div>
+
+    <!--BACK TO TOP-->
+    <div id="top"><a href="#"><img src="images/top.png" alt="back to top"></a></div>
+    
+    <!--FOOTER -->
+    <footer id="footer">      
+        Page Editor:<a href="student_1.html"> Tharushi Kaushani</a> <br>
+        Copyright &copy; All rights reserved.
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="js/products.js"></script>
+</body>
+</html>

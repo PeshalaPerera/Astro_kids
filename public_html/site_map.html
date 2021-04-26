@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Astro Kids</title>
+    <meta charset="UTF-8">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/site_map.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+    <!--TOP NAVIGATION BAR -->
+    <nav class="menu">
+        <div id="logo">
+            <img src="images/logo.png" alt="LOGO" height="48" width="300">
+        </div>
+        <ol class="main-menu">
+            <li class="menu-item"><a href="home.html">Home</a></li>
+            <li class="menu-item"><a href="products.html">Shop</a></li>
+            <li class="menu-item">
+                <a href="#">Pictionary</a>
+                <ol class="sub-menu">
+                    <li class="menu-item"><a href="thumbnails.html">Thumbnail</a></li>
+                    <li class="menu-item"><a href="more_pictures.html">More pictures for you</a></li>
+                </ol>
+            </li>
+            <li class="menu-item"><a href="quiz.html">Quiz</a></li>
+            <li class="menu-item"><a href="site_map.html">Site Map</a></li>
+            <li class="menu-item"><a href="contact_us.html">Contact Us</a></li>
+            <li class="menu-item"><a href="about_us.html">About Us</a></li>
+        </ol>
+    </nav>
+
+    <!--PAGE CONTENT -->
+    <div id="content">
+        <p style="color: transparent;">-</p>
+        <div class="centerElement"><h1 class="neon" >Map to our site</h1></div>      
+
+        <svg width="1100" height="1000">
+
+             <defs>
+                <linearGradient id="purpleBlue" >
+                  <stop offset="20%" stop-color="#a100f2" />
+                  <stop offset="90%" stop-color="#2d00f7" />
+                </linearGradient>
+
+                <linearGradient id="pinkPurple" >
+                  <stop offset="20%" stop-color="#eb52dc" />
+                  <stop offset="90%" stop-color="#7209b7" />
+                </linearGradient>
+
+                <linearGradient id="blueMint" >
+                  <stop offset="20%" stop-color="#4361ee" />
+                  <stop offset="90%" stop-color="#4cc9f0" />
+                </linearGradient>
+
+            </defs>
+
+            <g class="map" transform="translate(380,0)" >
+                <!-- Home Box -->
+                <g class="home" id="home">
+                    <rect x="-50" y="302.5" width="200" height="200" rx="18" ry="18"  stroke="#ffff" pointer-events="all" fill="url('#pinkPurple')" />
+                    <text fill="white" font-size="16" y="400" x="50" font-family="Ariel" text-anchor="middle"> Home Page</text>
+                </g>
+                <g class="secondRow">
+                    <!-- Shop Box -->
+                    <g class="shop" id="shop">
+                        <rect x="261" y="119" width="120" height="60" rx="9" ry="9" stroke="#fff" 
+                        fill="url('#purpleBlue')" pointer-events="all"/>
+                        <text fill="white" font-size="16" y="155" x="320" font-family="Ariel" text-anchor="middle">Products</text>
+                    </g>
+
+                    <!-- Pictionary -->
+                    <g class="pictionary" id="pictionary">
+                        <rect x="261" y="238" width="120" height="60" rx="9" ry="9"  stroke="#ffff" fill="url('#purpleBlue')" pointer-events="all"/>
+                        <text fill="white" font-size="16" y="270" x="320" font-family="Ariel" text-anchor="middle">Pictionary</text>
+                    </g>
+                    <g class="thirdRow" transform="translate(0,110)">
+                        <g class="thumbNail" id="thumbNail">
+                            <!-- Thumb Nail -->
+                            <rect x="499" y="74" width="120" height="34" rx="5.1" ry="5.1" stroke="#ffff" pointer-events="all" fill="url('#blueMint')"/>
+                            <text fill="white" font-size="16" y="95" x="560" font-family="Ariel" text-anchor="middle">ThumbNail</text>
+
+                        </g>
+                        <g class="gallery" id="gallery">
+                            <!-- Gallery -->
+                            <rect x="499" y="193" width="120" height="34" rx="5.1" ry="5.1" stroke="#fff" pointer-events="all" fill="url('#blueMint')"/>
+                            <text fill="white" font-size="16" y="215" x="560" font-family="Ariel" text-anchor="middle">Gallery</text>
+                        </g>
+                    </g>
+                    
+                    <!-- Quiz Box -->
+                    <g class="quiz" id="quiz">
+                        <rect x="261" y="353" width="120" height="60" rx="9" ry="9" stroke="#fff" pointer-events="all" fill="url('#purpleBlue')"/>
+                        <text fill="white" font-size="16" y="385" x="320" font-family="Ariel" text-anchor="middle">Quiz</text>
+                    </g>
+
+                    <!-- Site Map -->
+                    <g class="siteMap" id="siteMap">
+                        <rect x="261" y="461" width="120" height="60" rx="9" ry="9" stroke="#fff" pointer-events="all" fill="url('#purpleBlue')"/>
+                        <text fill="white" font-size="16" y="490" x="320" font-family="Ariel" text-anchor="middle">Site Map</text>
+
+                    </g>
+
+                    <!-- Contact Us -->
+                    <g class="contact" id="contact">
+                        <rect x="261" y="573" width="120" height="60" rx="9" ry="9" stroke="#fff" pointer-events="all" fill="url('#purpleBlue')"/>
+                        
+                        <text fill="white" font-size="16" y="605" x="320" font-family="Ariel" text-anchor="middle">Contact Us</text>
+                    </g>
+
+                    <!-- About Box -->
+                    <g class="about" id="about">
+                        <rect x="261" y="685" width="120" height="60" rx="9" ry="9" stroke="#fff" pointer-events="all" fill="url('#purpleBlue')"/>
+                        <text fill="white" font-size="16" y="720" x="320" font-family="Ariel" text-anchor="middle">About Us</text>
+                    </g>
+
+
+                    <!-- Arrows -->
+
+                    <!-- To Shop -->
+                    <line x1="150" y1="400" x2="260" y2="150" stroke="#000000"/>
+
+                    <!-- To Pictionary -->
+                    <line x1="150" y1="400" x2="260" y2="270" stroke="#000000"/>
+
+                    <!-- To Quiz -->
+                    <line x1="150" y1="400" x2="260" y2="385" stroke="#000000"/>
+
+                    <!-- To Site Map -->
+                    <line x1="150" y1="400" x2="260" y2="490" stroke="#000000"/>
+
+                    <!-- To Contact -->
+                    <line x1="150" y1="400" x2="260" y2="605" stroke="#000000"/>
+
+                    <!-- To About -->
+                    <line x1="150" y1="400" x2="260" y2="720" stroke="#000000"/>
+
+                    <!-- To ThumnbNail -->
+                    <line x1="381" y1="270" x2="500" y2="200" stroke="#000000"/>
+
+                    <!-- To ThumnbNail -->
+                    <line x1="381" y1="270" x2="500" y2="320" stroke="#000000"/>  
+                </g>
+            </g>
+        </svg>
+    </div>
+
+    <!--FOOTER -->
+    <footer id="footer">      
+        Page Editor:<a href="student_4.html"> Shewoni Amarosa</a> <br>
+        Copyright &copy; All rights reserved.
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="js/site_map.js"></script>
+</body>
+</html>

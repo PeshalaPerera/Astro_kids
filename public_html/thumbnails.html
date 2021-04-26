@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Astro Kids</title>
+    <meta charset="UTF-8">  
+    <!-- STYLES -->
+	<link rel="stylesheet" href="css/thumbnails.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+    <!--TOP NAVIGATION BAR -->
+    <nav class="menu">
+        <div id="logo">
+            <img src="images/logo.png" alt="LOGO" height="48" width="300">
+        </div>
+        <ol class="main-menu">
+            <li class="menu-item"><a href="home.html">Home</a></li>
+            <li class="menu-item"><a href="products.html">Shop</a></li>
+            <li class="menu-item">
+                <a href="#">Pictionary</a>
+                <ol class="sub-menu">
+                    <li class="menu-item"><a href="thumbnails.html">Thumbnail</a></li>
+                    <li class="menu-item"><a href="more_pictures.html">More pictures for you</a></li>
+                </ol>
+            </li>
+            <li class="menu-item"><a href="quiz.html">Quiz</a></li>
+            <li class="menu-item"><a href="site_map.html">Site Map</a></li>
+            <li class="menu-item"><a href="contact_us.html">Contact Us</a></li>
+            <li class="menu-item"><a href="about_us.html">About Us</a></li>
+        </ol>
+    </nav>
+
+    <!--PAGE CONTENT -->
+    <div id="body">
+    <p style="color: transparent;">-</p>
+       <div class="wrapper">
+        <h1 class="neon" >Welcome to Tumbnail</h1>
+        
+        <div>
+           <div class="dropdown">
+                <p><b>Background</b></p>
+                <div class="dropdown-background">
+                    <a class="bg_grey" href="#image" onclick="changeBG('grey-gradient')">Grey</a>
+                    <a class="bg_red" href="#image" onclick="changeBG('red-gradient')">Red</a>
+                    <a class="bg_blue" href="#image" onclick="changeBG('blue-gradient')">Blue</a>  
+                </div>
+            </div>
+            <div class="dropdown">
+                <p><b>Text</b></p>
+                <div class="dropdown-text">
+                    <a class="txt_blue" href="#image" onclick="changeTEXT('#02365D')">Blue</a>
+                    <a class="txt_yellow" href="#image" onclick="changeTEXT('#FDF500')">Yellow</a>
+                    <a class="txt_pink" href="#image" onclick="changeTEXT('#E1305A')">Pink</a>            
+                </div>
+            </div>
+            <div class="dropdown">
+                <p onclick="reset()"><b>Reset</b></p>
+            </div>
+        </div>
+        <br>
+
+
+        <div class="container">
+            <div class="image_row"> 
+                <div class="img_box">                   
+                    <img src="images/asteroid.jpg" id="asteroid" alt="asteroid"/>              
+                </div>                
+                <div class="in_img_content" id="asteroids_btn">
+                    <div>
+                        <h3>Asteroids</h3>                        
+                    </div>
+                </div>               
+            </div>
+
+            <div class="image_row">
+                <div class="img_box">                    
+                    <img src="images/astro.jpg" id="astronaut" alt="astronaut_btn">                    
+                </div>
+                <div class="in_img_content" id="astronaut_btn">
+                    <div>
+                        <h3>Astronaut</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image_row">
+                <div class="img_box">
+                    <img src="images/satellite.png" id="satellites" alt="satellites">
+                </div>
+                <div class="in_img_content" id="satelite_btn">
+                    <div>
+                        <h3>Space<br>Satellites</h3>                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="image_row">
+                <div class="img_box">
+                    <img src="images/collision.jpg" id="collision" alt="collision">
+                </div>
+                <div class="in_img_content"  id="collision_btn">
+                    <div>
+                        <h3>Planet<br>Collision</h3>                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="image_row">
+                <div class="img_box">
+                    <img src="images/galaxy.png" id="galaxies" alt="galaxies">
+                </div>
+                <div class="in_img_content"  id="galaxies_btn">
+                    <div>
+                        <h3>Galaxies</h3>                        
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div><br>
+
+            <div class="content">
+                <div id="ThePlanets" class="tabcontent">
+                    <div class="image-content">
+                        <div class="image centerElement" id="image">                                                        
+                            <img src="images/asteroid.jpg" alt="asteroid" />                            
+                        </div>
+                    
+                        <div class="image_description" id="image_description">
+                            <h2 id="title_text" class="centerElement">Asteroids</h2>
+                            <p id="description">Beyond the orbit of Mars lies the main belt of asteroids of minor planet. Only one (Ceres) is as much as 900 kilometers in diameter, and only one (Vesta) is ever visible with the naked eye; most of the members of the swarm are very small indeed, and there are fewer than 20 main belt asteroids which are as much as 250 kilometers across. The asteroids are not alike. The largest member of the swarm is fairly regular in shape, and smaller asteroids are certainly quite irregular in outline; collisions must have been and still are relatively frequent. Asteroids appear so small that to record surface detail in them are far from easy. Most main belt asteroids have reasonably circular orbits. There are a several types of asteroids as Carbonaceous, Salicaceous, Metallic etc.</p><br><br>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>      
+        </div>  
+        <!--BACK TO TOP-->
+        <div id="top"><a href="#"><img src="images/top.png" alt="back to top"></a></div>
+    </div>
+    
+    
+    <!--FOOTER -->
+    <footer id="footer">      
+        Page Editor:<a href="student_4.html"> Shewoni Amarosa</a> <br>
+        Copyright &copy; All rights reserved.
+    </footer>
+    
+    <!-- SCRIPT -->
+    <script src="js/thumbnails.js"></script>
+</body>
+</html>

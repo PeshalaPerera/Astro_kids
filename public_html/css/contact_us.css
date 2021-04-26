@@ -1,0 +1,154 @@
+#content {
+  padding: 30px;
+  margin: 0px 145px;
+  justify-content: center;
+}
+
+.container {
+  color: white;
+  height:430px;
+  width:1000px;
+  padding: 10px;
+  backdrop-filter: blur(10px);  
+  box-shadow: 0px 0px 20px 5px #888888;
+}
+
+.wrap-form {
+  background: inherit;
+  overflow: hidden;
+  padding: 20px 35px 20px 35px;
+}
+
+.form-title {
+  display: block;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  animation: glow .5s infinite alternate;
+}
+@keyframes glow {
+    to {
+        text-shadow: 0 0 15px #018EF5, 0 0 15px #00FFFF;
+    }
+}
+
+.input-container {
+  width: 100%;
+  position: relative;
+  padding-bottom: 13px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.input-label-1 {
+  float: left;
+  font-family: system-ui;  
+  font-size: 17px;
+  color: #2EF3D3;
+  line-height: 1.5;
+  padding-left: 5px;
+}
+
+.input-label-2 {
+  font-size: 15px;
+  color: #CFD8DC;
+  padding-left: 25px;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  background: rgba(255,255,255,.2);
+  font-size: 18px;
+  color: white; 
+  padding: 0 5px;
+  line-height: 32px;
+  border-radius: 20px;
+}
+
+.form-input::placeholder {
+   color: #CFD8DC;
+   padding: 5px;
+}
+
+input, textarea{
+    outline: none;
+    border: none;
+}
+textarea{
+    height: 70px;
+    resize: none;
+}
+
+.btn-container {
+  display: block;
+  width: 100%;
+}
+
+.btn{    
+    color: #255784;
+    background: #caf0f8;
+    border-radius: 56px;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3,0 0 80px #2196f3;    
+    font-weight: 900;
+    font-size: 16px;
+    padding: 16px 32px;
+    margin: 10px;    
+    position: relative;
+    overflow: hidden;    
+    cursor: pointer;
+    text-transform: uppercase;  
+    border: 0;
+    outline: 0;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background: #03e9f4;
+    color: #fff;
+    box-shadow: 0 0 5px #03e9f4;
+}
+
+#footer {
+    position: fixed;
+    width: 100%;
+}
+
+.send_btn{
+    color: #255784;
+    background: #caf0f8;
+    border-radius: 56px;
+    min-width: 200px;
+    height: 48px;
+    margin: 10px;
+    outline: 0;
+    border: 0;
+    padding: 10px;
+}
+
+.send_btn:hover{
+    cursor: pointer;
+    background: #03e9f4;
+    color: #fff;
+    box-shadow: 0 0 5px #03e9f4;
+}
+
+.edit_btn{
+    color: #255784;
+    background: #caf0f8;
+    border-radius: 56px;
+    min-width: 200px;
+    height: 48px;
+    margin: 10px;
+    outline: 0;
+    border: 0;
+    padding: 10px;
+}
+
+.edit_btn:hover{
+    cursor: pointer;
+    background: #F6226D;
+    color: #fff;
+    box-shadow: 0 0 5px #03e9f4;
+}
+
